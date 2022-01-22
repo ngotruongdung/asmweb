@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html{
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* CSS cho phần heading của trang web */
+
+.heading{
+    font-size: 28px;
+    color: #24A19C;
+    text-align: center;
+    margin: 40px 0;
+    position: relative;
+}
+
+.heading::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: #24A19C;
+    top: 45px;
+    left: 47%;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.thongbao{
+    height: 40px;
+    text-align: center;
+    background: #24A19C;
+    color: white;
+    line-height: 40px;
+}
+
+.menu-logo{
+    height: 70px;
+    position: relative;
+    background: #ededed;
+}
+
+.menu-logo .logo{
+    position: absolute;
+    top: 5px;
+    left: 80px;
+}
+
+.menu-logo nav{
+    position: absolute;
+    right: 400px;
+}
+
+.menu-logo nav a{
+    text-decoration: none;
+    color: #000;
+    line-height: 70px;
+    margin: 0 30px;
+}
+
+.menu-logo nav a:hover{
+    color: #24A19C;
+    font-weight: bold;
+    transition: all .5s linear;
+}
+
+.menu-logo .login{
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    height: 35px;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+/* CSS Cho Login */
+.login-form{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.login-form form{
+    display: flex;
+    /* Dàn các thẻ con thành hàng dọc */
+    flex-direction: column;
+}
+
+.login-form form input{
+    padding: 15px 15px;
+    border: 1px solid #eee;
+    font-family: 'Quicksand', sans-serif;
+    outline: none;
+    margin: 15px 0;
+    border-radius: 5px;
+    transition: all .2s linear;
+}
+
+
+.login-form form input:focus{
+    border: 1px solid #24A19C;
+}
+
+.login-form form button{
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #24A19C;
+    font-size: 18px;
+    font-weight: bold;
+    color: #24A19C;
+}
+
+.login-form form button:hover{
+    background: #24A19C;
+    color: #fff;
+    transition: all .4s linear;
+}
+
+.link-login{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin: 30px 0;
+}
+
+.link-login:hover{
+    color: #24A19C;
+    transition: all .4s linear;
+}
+
+
+/* CSS cho phần footer */
+footer{
+    width: 100%;
+    background: #24A19C;
+    color: #fff;
+    text-align: center;
+}
+footer .footer-item{
+    width: 30%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+footer .footer-item h3{
+    margin: 30px 0;
+}
+footer .link a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 3px 0;
+    /* margin: 3px -> trên và dưới 0 -> trái và phải */
+    /* margin: 3px 0px 3px 0px */
+    margin: 10px;
+}
+
+.tacgia{
+    background: #24A19C;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.tacgia p{
+    padding-top: 10px;
+}
+
+.backtotop{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+}
+
+.backtotop a{
+    padding: 15px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ededed;
+    background: #24A19C;
+}

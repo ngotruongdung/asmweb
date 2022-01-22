@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html{
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.thongbao{
+    height: 40px;
+    text-align: center;
+    background: #24A19C;
+    color: white;
+    line-height: 40px;
+}
+
+.menu-logo{
+    height: 70px;
+    position: relative;
+    background: #ededed;
+}
+
+.menu-logo .logo{
+    position: absolute;
+    top: 5px;
+    left: 80px;
+}
+
+.menu-logo nav{
+    position: absolute;
+    right: 400px;
+}
+
+.menu-logo nav a{
+    text-decoration: none;
+    color: #000;
+    line-height: 70px;
+    margin: 0 30px;
+}
+
+.menu-logo nav a:hover{
+    color: #24A19C;
+    font-weight: bold;
+    transition: all .5s linear;
+}
+
+.menu-logo .login{
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    height: 35px;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+.banner{
+    width: 100%;
+    margin-top: 110px;
+}
+
+.banner img{
+    max-width: 100%;
+}
+
+input{
+    padding: 5px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* CSS cho phần heading của trang web */
+
+.heading{
+    font-size: 28px;
+    color: #24A19C;
+    text-align: center;
+    margin: 40px 0;
+    position: relative;
+}
+
+.heading::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: #24A19C;
+    top: 45px;
+    left: 47%;
+}
+
+/* CSS cho phần sản phẩm */
+
+.product .list-product .product-item{
+    /* Chiều dài của ô sản phẩm */
+    width: 22%;
+    /* Khoảng cách của những ô sản phẩm */
+    margin: 20px 20px;
+    /* Cho phép nhiều ô sản phẩm trên cùng 1 hàng */
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.product .list-product .product-item:hover{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: all .3s linear;
+}
+
+.product .list-product .product-item img{
+    max-width: 100%;
+}
+
+
+
+/* CSS cho phần tin tức */
+
+.tintuc .new-item{
+    width: 30%;
+    margin: 20px 20px;
+    display: inline-block;
+}
+
+.tintuc .new-item:hover img{
+    opacity: 1;
+    transition: all .5s linear;
+    transform: scale(1.1);
+}
+
+.tintuc .new-item img{
+    max-width: 100%;
+    opacity: .7;
+}
+
+/* CSS cho phần footer */
+footer{
+    width: 100%;
+    background: #24A19C;
+    color: #fff;
+    text-align: center;
+}
+footer .footer-item{
+    width: 30%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+footer .footer-item h3{
+    margin: 30px 0;
+}
+footer .link a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 3px 0;
+    /* margin: 3px -> trên và dưới 0 -> trái và phải */
+    /* margin: 3px 0px 3px 0px */
+    margin: 10px;
+}
+
+.tacgia{
+    background: #24A19C;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.tacgia p{
+    padding-top: 10px;
+}
+
+.backtotop{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+}
+
+.backtotop a{
+    padding: 15px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ededed;
+    background: #24A19C;
+}
